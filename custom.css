@@ -1,0 +1,23 @@
+.menu-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.menu-link:hover {
+  color: #007bff; /* Màu khi hover */
+}
+
+.menu-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Điều chỉnh khoảng cách gạch chân */
+  height: 2px;
+  width: 0;
+  background-color: #007bff; /* Màu gạch chân */
+  transition: width 0.3s;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
